@@ -1,29 +1,48 @@
-<!-- شريط التنقل العُلوي -->
-<header>
-    <div class="nav-container">
-        <span class="logo-text">COMPUTER SCIENCE - FACULTY OF COMPUTERS</span>
-        <nav>
-            <a href="#" class="active">Home</a>
-            <a href="#">About</a>
-            <a href="#">Skills</a>
-            <a href="#">Education</a>
-            <a href="#">Projects</a>
-        </nav>
-    </div>
-</header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed Ramadan Ibrahim - Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dark-mode">
 
-<!-- المحتوى الرئيسي للموقع -->
-<main class="hero-section">
-    <div class="hero-content">
-        <h1>Mohamed<br>Ramadan<br>Ibrahim</h1>
-        <p class="id-text">ID // 224101312</p>
-        <p class="bio-text">Student, builder, and web development learner. Field Training (FT-WEB-101) Task 1.</p>
-        <a href="#contact" class="btn-contact">Get in touch</a>
-    </div>
+    <!-- شريط التنقل العلوي -->
+    <header>
+        <div class="nav-container">
+            <span class="logo-text">COMPUTER SCIENCE - FACULTY OF COMPUTERS</span>
+            <nav>
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#education">Education</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
 
-    <div class="hero-image">
-        <img src="images/me.jpg" alt="Mohamed Ramadan Ibrahim">
-    </div>
-</main>
+    <!-- المحتوى الرئيسي (الواجهة) -->
+    <main class="hero-section" id="home">
+        <div class="hero-content">
+            <h1>Mohamed<br>Ramadan<br>Ibrahim</h1>
+            <p class="id-text">ID // 224101312</p>
+            <p class="bio-text">Student, builder, and web development learner. Field Training (FT-WEB-101) Task 1.</p>
+            <a href="#contact" class="btn-contact">Get in touch</a>
+        </div>
 
-<script src="js/script.js"></script>
+        <div class="hero-image">
+            <img src="images/me.jpg" alt="Mohamed Ramadan Ibrahim">
+        </div>
+    </main>
+
+    <!-- قسم عني (About) -->
+    <section class="about-section" id="about">
+        <h2>About</h2>
+        <p>I am a Computer Science student who likes understanding how things work and then building them myself.</p>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
