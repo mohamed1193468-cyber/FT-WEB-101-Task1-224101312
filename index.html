@@ -1,48 +1,58 @@
+<!-- Name: Mohamed Ramadan Ibrahim - ID: 224101312 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohamed Ramadan Ibrahim - Profile</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohamed Ramadan Ibrahim - Profile</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="dark-mode">
+<body>
+  <header>
+    <h1>Mohamed Ramadan Ibrahim</h1>
+    <nav class="bar">
+      <span>Mohamed Ramadan</span>
+      <div class="links">
+        <a href="#cards">About</a>
+        <a href="#contact">Contact</a>
+        <button id="theme-btn" type="button">Dark / Light</button>
+      </div>
+    </nav>
+  </header>
 
-    <!-- شريط التنقل العلوي -->
-    <header>
-        <div class="nav-container">
-            <span class="logo-text">COMPUTER SCIENCE - FACULTY OF COMPUTERS</span>
-            <nav>
-                <a href="#home" class="active">Home</a>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#education">Education</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </div>
-    </header>
+  <main>
+    <img src="images/me.jpg" alt="Photo of Mohamed Ramadan Ibrahim">
 
-    <!-- المحتوى الرئيسي (الواجهة) -->
-    <main class="hero-section" id="home">
-        <div class="hero-content">
-            <h1>Mohamed<br>Ramadan<br>Ibrahim</h1>
-            <p class="id-text">ID // 224101312</p>
-            <p class="bio-text">Student, builder, and web development learner. Field Training (FT-WEB-101) Task 1.</p>
-            <a href="#contact" class="btn-contact">Get in touch</a>
-        </div>
-
-        <div class="hero-image">
-            <img src="images/me.jpg" alt="Mohamed Ramadan Ibrahim">
-        </div>
-    </main>
-
-    <!-- قسم عني (About) -->
-    <section class="about-section" id="about">
-        <h2>About</h2>
-        <p>I am a Computer Science student who likes understanding how things work and then building them myself.</p>
+    <section id="cards" class="cards">
+      <div class="card">
+        <h2>Skills</h2>
+        <p>HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="card">
+        <h2>Hobbies</h2>
+        <p>Building things and learning how they work.</p>
+      </div>
+      <div class="card">
+        <h2>Study</h2>
+        <p>Computer Science, New Mansoura University.</p>
+      </div>
     </section>
 
-    <script src="js/script.js"></script>
+    <section id="contact">
+      <h2>Leave your details</h2>
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name">
+        <label for="email">Email</label>
+        <input type="email" id="email">
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Mohamed Ramadan Ibrahim</p>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
