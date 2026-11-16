@@ -1,56 +1,29 @@
+<!-- شريط التنقل العُلوي -->
 <header>
-    <div class="bar-container">
-        <h1>Mohamed Ramadan Ibrahim</h1>
-        <nav class="nav-links">
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
+    <div class="nav-container">
+        <span class="logo-text">COMPUTER SCIENCE - FACULTY OF COMPUTERS</span>
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="#">About</a>
+            <a href="#">Skills</a>
+            <a href="#">Education</a>
+            <a href="#">Projects</a>
         </nav>
     </div>
 </header>
 
-<main>
-    <section class="profile-section">
-        <img src="images/me.jpg" alt="Profile picture of Mohamed Ramadan" class="profile-img">
-        
-        <div class="cards-row">
-            <div class="card">
-                <h3>Programming</h3>
-                <p>Experienced in C#, Python, and building responsive web interfaces using HTML, CSS, and JavaScript.</p>
-            </div>
-            <div class="card">
-                <h3>Databases</h3>
-                <p>Skilled in relational database queries, data structures, and data mining fundamentals.</p>
-            </div>
-            <div class="card">
-                <h3>Fitness</h3>
-                <p>Passionate about regular weightlifting, resistance training, and maintaining a disciplined lifestyle.</p>
-            </div>
-        </div>
-    </section>
+<!-- المحتوى الرئيسي للموقع -->
+<main class="hero-section">
+    <div class="hero-content">
+        <h1>Mohamed<br>Ramadan<br>Ibrahim</h1>
+        <p class="id-text">ID // 224101312</p>
+        <p class="bio-text">Student, builder, and web development learner. Field Training (FT-WEB-101) Task 1.</p>
+        <a href="#contact" class="btn-contact">Get in touch</a>
+    </div>
 
-    <section id="contact" class="form-section">
-        <h2>Get in Touch</h2>
-        <form>
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <button type="submit">Submit</button>
-        </form>
-    </section>
-
-    <div class="theme-toggle-container">
-        <button id="theme-toggle-btn">Toggle Dark/Light Mode</button>
+    <div class="hero-image">
+        <img src="images/me.jpg" alt="Mohamed Ramadan Ibrahim">
     </div>
 </main>
-
-<footer>
-    <p>&copy; 2026 Mohamed Ramadan Ibrahim. All rights reserved.</p>
-</footer>
 
 <script src="js/script.js"></script>

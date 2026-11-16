@@ -1,135 +1,114 @@
-:root {
---bg-color: #ffffff;
---text-color: #333333;
---bar-bg: #f4f4f4;
---card-bg: #f9f9f9;
---card-border: #ddd;
---accent-color: #0066cc;
---btn-bg: #333;
---btn-text: #fff;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-body.dark {
---bg-color: #121212;
---text-color: #e0e0e0;
---bar-bg: #1e1e1e;
---card-bg: #1e1e1e;
---card-border: #333;
---accent-color: #4da6ff;
---btn-bg: #e0e0e0;
---btn-text: #121212;
+
+body.dark-mode {
+    background-color: #0d1b2a;
+    color: #ffffff;
+    min-height: 100vh;
 }
-{
-box-sizing: border-box;
-margin: 0;
-padding: 0;
-}
-body {
-background-color: var(--bg-color);
-color: var(--text-color);
-font-family: Arial, sans-serif;
-line-height: 1.6;
-transition: background-color 0.3s, color 0.3s;
-}
+
 header {
-background-color: var(--bar-bg);
-border-bottom: 1px solid var(--card-border);
-padding: 1rem 2rem;
+    padding: 20px 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
-.bar-container {
-display: flex;
-justify-content: space-between;
-align-items: center;
-max-width: 1000px;
-margin: 0 auto;
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
-header h1 {
-font-size: 1.5rem;
+
+.logo-text {
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #a0aec0;
 }
-.nav-links a {
-color: var(--text-color);
-text-decoration: none;
-margin-left: 1.5rem;
-font-weight: bold;
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 15px;
+    transition: color 0.3s;
 }
-.nav-links a:hover {
-color: var(--accent-color);
+
+nav a.active, nav a:hover {
+    color: #ff5722;
 }
-main {
-max-width: 1000px;
-margin: 2rem auto;
-padding: 0 1rem;
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
 }
-.profile-img {
-display: block;
-width: 150px;
-height: 150px;
-object-fit: cover;
-border-radius: 50%;
-margin: 0 auto 2rem auto;
-border: 3px solid var(--accent-color);
+
+.hero-content {
+    flex: 1;
+    min-width: 300px;
 }
-.cards-row {
-display: flex;
-gap: 1.5rem;
-margin-bottom: 2rem;
-flex-wrap: wrap;
+
+.hero-content h1 {
+    font-size: 52px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 20px;
 }
-.card {
-flex: 1;
-min-width: 250px;
-background-color: var(--card-bg);
-border: 1px solid var(--card-border);
-padding: 1.5rem;
-border-radius: 8px;
-box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+
+.id-text {
+    font-size: 16px;
+    color: #ff5722;
+    margin-bottom: 15px;
+    font-weight: 600;
 }
-.card h3 {
-margin-bottom: 0.5rem;
-color: var(--accent-color);
+
+.bio-text {
+    font-size: 16px;
+    color: #cbd5e0;
+    margin-bottom: 30px;
+    max-width: 450px;
 }
-.form-section {
-background-color: var(--card-bg);
-border: 1px solid var(--card-border);
-padding: 1.5rem;
-border-radius: 8px;
-margin-bottom: 2rem;
+
+.btn-contact {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #0d1b2a;
+    padding: 12px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
 }
-.form-section h2 {
-margin-bottom: 1rem;
-font-size: 1.2rem;
+
+.btn-contact:hover {
+    background-color: #ff5722;
+    color: #ffffff;
 }
-.form-group {
-margin-bottom: 1rem;
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+    margin-top: 20px;
 }
-.form-group label {
-display: block;
-margin-bottom: 0.3rem;
-}
-.form-group input {
-width: 100%;
-padding: 0.5rem;
-border: 1px solid var(--card-border);
-border-radius: 4px;
-background-color: var(--bg-color);
-color: var(--text-color);
-}
-.form-section button, .theme-toggle-container button {
-background-color: var(--btn-bg);
-color: var(--btn-text);
-border: none;
-padding: 0.6rem 1.2rem;
-border-radius: 4px;
-cursor: pointer;
-font-weight: bold;
-}
-.theme-toggle-container {
-text-align: center;
-margin-bottom: 2rem;
-}
-footer {
-text-align: center;
-padding: 1.5rem;
-background-color: var(--bar-bg);
-border-top: 1px solid var(--card-border);
-font-size: 0.9rem;
+
+.hero-image img {
+    width: 280px;
+    height: 380px;
+    object-fit: cover;
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
