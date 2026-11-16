@@ -6,7 +6,7 @@
 }
 
 body.dark-mode {
-    background-color: #0d1b2a;
+    background-color: #0b132b;
     color: #ffffff;
     min-height: 100vh;
 }
@@ -26,14 +26,14 @@ header {
 .logo-text {
     font-size: 13px;
     letter-spacing: 1px;
-    color: #a0aec0;
+    color: #8d99ae;
 }
 
 nav a {
     color: #ffffff;
     text-decoration: none;
-    margin-left: 25px;
-    font-size: 15px;
+    margin-left: 20px;
+    font-size: 14px;
     transition: color 0.3s;
 }
 
@@ -45,7 +45,7 @@ nav a.active, nav a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 60px 80px;
+    padding: 50px 80px;
     max-width: 1200px;
     margin: 0 auto;
     flex-wrap: wrap;
@@ -61,6 +61,7 @@ nav a.active, nav a:hover {
     font-weight: 800;
     line-height: 1.1;
     margin-bottom: 20px;
+    color: #ffffff;
 }
 
 .id-text {
@@ -68,24 +69,26 @@ nav a.active, nav a:hover {
     color: #ff5722;
     margin-bottom: 15px;
     font-weight: 600;
+    letter-spacing: 1px;
 }
 
 .bio-text {
-    font-size: 16px;
+    font-size: 15px;
     color: #cbd5e0;
-    margin-bottom: 30px;
-    max-width: 450px;
+    margin-bottom: 25px;
+    max-width: 420px;
+    line-height: 1.5;
 }
 
 .btn-contact {
     display: inline-block;
     background-color: #ffffff;
-    color: #0d1b2a;
-    padding: 12px 28px;
-    border-radius: 30px;
+    color: #0b132b;
+    padding: 10px 24px;
+    border-radius: 25px;
     text-decoration: none;
     font-weight: 600;
-    transition: background 0.3s;
+    transition: background 0.3s, color 0.3s;
 }
 
 .btn-contact:hover {
@@ -103,12 +106,32 @@ nav a.active, nav a:hover {
 }
 
 .hero-image img {
-    width: 280px;
-    height: 380px;
+    width: 260px;
+    height: 350px;
     object-fit: cover;
-    border-top-left-radius: 150px;
-    border-top-right-radius: 150px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    border-top-left-radius: 130px;
+    border-top-right-radius: 130px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+.about-section {
+    padding: 40px 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.about-section p {
+    font-size: 16px;
+    color: #cbd5e0;
+    max-width: 600px;
+    line-height: 1.6;
 }
